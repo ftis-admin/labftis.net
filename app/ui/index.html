@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{@page.title}}</title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0">
+    <link href="/assets/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/css/flat-ui.min.css" rel="stylesheet">
+</head>
+<body>
+    <include href="{{@page.content}}" if="{{isset(@page.content)}}" />
+    <include href="component/footer.html"/>
+</body>
+</html>
